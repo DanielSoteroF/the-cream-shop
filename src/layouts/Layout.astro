@@ -12,6 +12,7 @@ const { title, description } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
@@ -22,12 +23,11 @@ const { title, description } = Astro.props;
 </html>
 <style is:global>
 	
-	html {
+	* {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
 		font-family: system-ui, sans-serif;
-		background: #fff;
 		background-size: 224px;
 	}
 

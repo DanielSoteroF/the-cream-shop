@@ -1,3 +1,27 @@
-<section>
-    <p>Navbar</p>
-</section>
+---
+import Image from "astro/components/Image.astro";
+import LogoTheCreamShop from "../assets/logo-thecreamshop.webp";
+---
+
+<nav class="w-11/12 m-auto h-20 flex justify-between items-center mt-10">
+  <div class="w-20 h-20">
+    <Image src={LogoTheCreamShop} alt="The Cream Shop" class="w-full" format="webp" loading={"eager"} />
+  </div>
+  <div class="flex items-center justify-between w-3/5 bg-neutral-white h-full rounded-xl px-10">
+    <div>
+      <ul class="flex gap-8">
+        <li><a href="#"><span>Inicio</span></a></li>
+        <li><a href="#"><span>Productos</span></a></li>
+        <li><a href="#"><span>Blog</span></a></li>
+        <li><a href="#"><span>Contacto</span></a></li>
+      </ul>
+    </div>
+    <div>
+      <a
+        href=""
+        class="font-bold bg-primary-red text-white px-5 py-3 rounded-xl">
+        Ofertas
+      </a>
+    </div>
+  </div>
+</nav>
