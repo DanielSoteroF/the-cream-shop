@@ -1,6 +1,6 @@
-<section class=" border-y border-neutral-black py-5">
+<section class=" border-y border-secundary-purple bg-secundary-purple py-5 -rotate-2">
     <div class="carousel">
-        <div class="carousel-wrapper uppercase text-neutral-black text-2xl flex">
+        <div class="carousel-wrapper uppercase text-neutral-white text-2xl flex">
             <div class="carousel-item">A LA MODA <span class="mx-10 text-4xl">✦</span></div>
             <div class="carousel-item">NUEVA COLECCION  <span class="mx-10 text-4xl">✦</span></div>
             <div class="carousel-item">TENDENCIA <span class="mx-10 text-4xl">✦</span></div>
@@ -23,22 +23,23 @@
 
     .carousel-wrapper {
         width: 100%;
-        animation: 13.7787s linear 0s infinite normal none running marqueeAnimation;
+        animation: 13.7787s linear 0s infinite normal none running marqueeAnimation2;
     }
 
     .carousel-item {
+        transform: translateX(-1000px);
         display: flex;
         flex: 0 0 auto;
         align-items: center;
         height: auto;
     }
 
-    @keyframes marqueeAnimation {
+    @keyframes marqueeAnimation2 {
         0% {
-            transform: translateX(0);
+            transform: translateX(0px);
         }
         100% {
-            transform: translateX(-790px);
+            transform: translateX(790px);
         }
     }
 </style>
