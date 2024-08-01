@@ -5,7 +5,7 @@ import LogoTheCreamShop from "../assets/logo-thecreamshop.webp";
 
 <footer class="w-11/12 m-auto flex flex-col gap-10 py-10">
   <div>
-    <ul class="flex gap-14 justify-center">
+    <ul class="flex flex-col lg:flex-row gap-14 items-center justify-center">
       <li><a href="#"><span>Inicio</span></a></li>
       <li><a href="#"><span>Productos</span></a></li>
       <li><a href="#"><span>Blog</span></a></li>
@@ -13,7 +13,7 @@ import LogoTheCreamShop from "../assets/logo-thecreamshop.webp";
     </ul>
   </div>
   <hr class="w-full h-1 border-x-neutral-700" />
-  <div class="w-full flex items-center justify-between">
+  <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-10">
     <div class="w-40 h-40">
       <Image
         src={LogoTheCreamShop}
@@ -23,7 +23,7 @@ import LogoTheCreamShop from "../assets/logo-thecreamshop.webp";
         loading={"eager"}
       />
     </div>
-    <div class="w-2/4">
+    <div class="text-center lg:text-start lg:w-2/4">
       <span>
         En creamIce, nuestra pasión por la moda comenzó con una simple idea:
         crear prendas que combinen estilo y comodidad sin comprometer la
@@ -34,7 +34,7 @@ import LogoTheCreamShop from "../assets/logo-thecreamshop.webp";
     </div>
   </div>
   <hr class="w-full h-1 border-x-neutral-700" />
-  <div class="w-full flex items-center justify-between">
+  <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-8">
     <div>
       <span>© The Cream Shop 2022 | <a href="https://umbrellacode.site/">Umbrella Code</a></span>
     </div>
