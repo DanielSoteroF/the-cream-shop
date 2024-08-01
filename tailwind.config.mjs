@@ -9,7 +9,11 @@ export default {
 				'neutral-black': '#0D0D0D',
 				'secundary-purple': '#A732D9',
 				'secundary-green': '#14D959',
-			}
+			},
+			fontFamily: {
+				'black-han-sans': ['Black Han Sans', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],
