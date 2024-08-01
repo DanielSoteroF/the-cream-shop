@@ -1,0 +1,34 @@
+---
+import AirJordanRetro4 from '../assets/img-collections/air_jordan_retro_4.webp'
+import Aj4 from '../assets/img-collections/aj4.webp'
+import NikeAirForce from '../assets/img-collections/nike-air-force.webp'
+
+const COLLECTIONS = [
+    {
+        'name': 'Air Jordan Retro 4',
+        'img': AirJordanRetro4.src,
+        'description': 'Kit de limpieza con una variedad de productos para mantener tu interior limpio y fresco.',
+    },
+    {
+        'name': 'AJ4',
+        'img': Aj4.src,
+        'description': 'Kit de limpieza con una variedad de productos para mantener tu interior limpio y fresco.',
+    },
+    {
+        'name': 'Nike Air Force',
+        'img': NikeAirForce.src,
+        'description': 'Kit de limpieza con una variedad de productos para mantener tu interior limpio y fresco.',
+    }
+]
+---
+{
+    COLLECTIONS.map((collection) => {
+        return (
+            <div class="">
+                <a href="#">
+                    <img src={collection.img} alt="collection" class="w-full h-full object-cover shadow-lg rounded-3xl"/>
+                </a>
+            </div>
+        )
+    })
+}
