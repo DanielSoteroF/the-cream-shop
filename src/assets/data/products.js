@@ -1,7 +1,6 @@
----
-import AirJordanRetro4 from '../assets/img-collections/air_jordan_retro_4.webp'
-import Aj4 from '../assets/img-collections/aj4.webp'
-import NikeAirForce from '../assets/img-collections/nike-air-force.webp'
+import AirJordanRetro4 from '../img-collections/air_jordan_retro_4.webp';
+import Aj4 from '../img-collections/aj4.webp';
+import NikeAirForce from '../img-collections/nike-air-force.webp';
 
 const COLLECTIONS = [
     {
@@ -21,15 +20,4 @@ const COLLECTIONS = [
     }
 ];
 
----
-{
-    COLLECTIONS.map((collection) => {
-        return (
-            <div class="">
-                <a href={'product/' + collection.name.toLowerCase().replace(/\s+/g, '-')}>
-                    <img src={collection.img} alt="collection" class="w-full h-full object-cover shadow-lg rounded-3xl"/>
-                </a>
-            </div>
-        )
-    })
-}
+export default COLLECTIONS;
