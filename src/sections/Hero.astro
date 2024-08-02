@@ -2,7 +2,7 @@
 import HeroZap from '../assets/img-hero/hero-zap.webp'
 ---
 
-<section class="w-11/12 mx-auto flex flex-col gap-5 lg:gap-10">
+<section class="w-11/12 mx-auto flex flex-col gap-10">
     <div>
         <div>
             <h1 class="text-[45px] lg:text-9xl font-bold font-black-han-sans text-center
@@ -26,11 +26,12 @@ import HeroZap from '../assets/img-hero/hero-zap.webp'
         </div>
     </div>
 
-    <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-5 gap-5 lg:gap-10 h-[500px]">
+    <!-- BANNER -->
+    <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-5 gap-8 lg:gap-10 h-[500px]">
         <div class="bg-secundary-green col-span-3 rounded-3xl flex items-center justify-center shadow-lg relative">
-            <img class="absolute" src={HeroZap.src} alt="Moda">
+            <img class="absolute lg:w-11/12 w-4/5 md:w-1/2" src={HeroZap.src} alt="Moda">
         </div>
-        <div class="col-span-3 lg:col-span-2 grid max-sm:grid-cols-2 lg:grid-rows-2 gap-5 lg:gap-10">
+        <div class="col-span-3 lg:col-span-2 grid grid-cols-2 md:grid-cols-2 lg:grid-rows-2 gap-5 lg:gap-10">
             <div class="bg-[url('/img/kit-limpieza.webp')] bg-no-repeat bg-cover bg-center w-full group shadow-lg rounded-3xl">
                 <a class="hidden
                     group-hover:flex w-full h-full items-center justify-center 
@@ -50,32 +51,33 @@ import HeroZap from '../assets/img-hero/hero-zap.webp'
         </div>
     </div>
 
-    <div class="flex flex-row gap-5 items-center justify-center">
-        <div>
-            <div class="bg-secundary-purple rounded-full w-8/12 h-32 flex items-center justify-center">
-                <i class="fa-solid fa-socks text-neutral-white text-8xl"></i>
+    <!-- CATEGORIAS -->
+    <div class="grid grid-cols-3 gap-5">
+        <div class="flex flex-col gap-5 items-center justify-center ">
+            <div class="bg-secundary-purple rounded-full w-20 h-20 lg:w-40 lg:h-40 flex items-center justify-center">
+                <i class="fa-solid fa-socks text-neutral-white text-4xl lg:text-8xl"></i>
             </div>
             <div>
-                <h3 class="font-poppins text-xm lg:text-4xl text-center font-bold">COMODIDAD</h3>
-                <p>Comodidad y confort para tus pies</p>
+                <h3 class="font-poppins text-sm lg:text-4xl text-center font-bold">COMODIDAD</h3>
+                <p class="text-xs lg:text-base text-neutral-gray text-center">Comodidad y confort para tus pies</p>
             </div>
         </div>
-        <div>
-            <div class="bg-secundary-purple rounded-full w-8/12 h-32 flex items-center justify-center">
-                <i class="fa-solid fa-dumbbell text-neutral-white text-8xl"></i>
+        <div class="flex flex-col gap-5 items-center justify-center ">
+            <div class="bg-secundary-purple rounded-full w-20 h-20 lg:w-40 lg:h-40 flex items-center justify-center">
+                <i class="fa-solid fa-dumbbell text-neutral-white text-4xl lg:text-8xl"></i>
             </div>
             <div>
-                <h3 class="font-poppins text-xm lg:text-4xl text-center font-bold">DURABILIDAD</h3>
-                <p>Resistencia al desgaste y a las condiciones climaticas</p>
+                <h3 class="font-poppins text-sm lg:text-4xl text-center font-bold">DURABILIDAD</h3>
+                <p class="text-xs lg:text-base text-neutral-gray text-center">Resistencia al desgaste y climáticas</p>
             </div>
         </div>
-        <div>
-            <div class="bg-secundary-purple rounded-full w-8/12 h-32 flex items-center justify-center">
-                <i class="fa-solid fa-boot-heeled text-neutral-white text-8xl"></i>
+        <div class="flex flex-col gap-5 items-center justify-center ">
+            <div class="bg-secundary-purple rounded-full w-20 h-20 lg:w-40 lg:h-40 flex items-center justify-center">
+                <i class="fa-solid fa-boot-heeled text-neutral-white text-4xl lg:text-8xl"></i>
             </div>
             <div>
-                <h3 class="font-poppins text-xm lg:text-4xl text-center font-bold">ESTILO</h3>
-                <p>Estilo y color para mejorar tu estilo</p>
+                <h3 class="font-poppins text-sm lg:text-4xl text-center font-bold">ESTILO</h3>
+                <p class="text-xs lg:text-base text-neutral-gray text-center">Estilo y color para mejorar tu estilo</p>
             </div>
         </div>
     </div>
