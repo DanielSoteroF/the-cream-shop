@@ -6,8 +6,8 @@ export function getStaticPaths() {
   const paths = COLLECTIONS.map((collection) => ({
     params: { name: collection.name.toLowerCase().replace(/\s+/g, '-') }
   }));
-  return { paths };
-}// Busca la colección correspondiente
+  return { paths, fallback: false }; // Asegúrate de especificar `fallback`
+}
 
 const { name } = Astro.params;
 const collection = COLLECTIONS.find((col) => col.name.toLowerCase().replace(/\s+/g, '-') === name);
